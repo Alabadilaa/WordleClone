@@ -1,8 +1,8 @@
 import logo from './logo_w.png'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Hero from './Components/Hero'
-import Wordle from './Components/Wordle'
-import Navbar from './Components/Navbar'
+import Home from './Components/Home/Home'
+import Wordle from './Components/Wordle/Wordle'
+import Navbar from './Components/Navbar/Navbar'
 import './App.css';
 import { useEffect, useState } from 'react';
 
@@ -24,7 +24,7 @@ function App() {
       <Navbar/>
     <BrowserRouter>
     <Routes>
-          <Route path="/home" element={<Hero />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/wordle" element={<Wordle/>} />
         </Routes>
       </BrowserRouter>

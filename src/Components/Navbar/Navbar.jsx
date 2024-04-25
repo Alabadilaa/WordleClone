@@ -1,4 +1,6 @@
+import logo from '../Assets/logo_w.png'
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { TiThMenu } from "react-icons/ti";
 
 
