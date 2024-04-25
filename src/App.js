@@ -36,7 +36,7 @@ function App() {
           Wordle Clone.
       </h1>
 
-      {solution && <div>Solution is: {solution}</div>}
+      {solution && <Wordle solution={solution}/>}
     </div>
 
     </div>
