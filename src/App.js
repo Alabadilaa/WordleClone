@@ -1,4 +1,4 @@
-import logo from './logo_w.png'
+
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Home from './Components/Home/Home'
 import Wordle from './Components/Wordle/Wordle'
