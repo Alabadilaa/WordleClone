@@ -1,0 +1,26 @@
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%; /* Position the menu horizontally centered under the menu icon */
+    transform: translateX(-50%);
+    list-style: none;
+    background-color: #1888ff;
+    padding: 10px;
+    display: none;
+  }
+  
+  .dropdown-menu.active {
+    display: block;
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 16px;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #5cabff;
+  }
+  

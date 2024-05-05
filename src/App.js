@@ -3,6 +3,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Home from './Components/Home/Home'
 import Wordle from './Components/Wordle/Wordle'
 import Navbar from './Components/Navbar/Navbar'
+import Navbaar from './Components/Navbaar/Navbaar'
 import './App.css';
 import { useEffect, useState } from 'react';
 
@@ -20,26 +21,22 @@ function App() {
 
   return (
     <div>
-
-      <Navbar/>
-    <BrowserRouter>
-    <Routes>
+      <BrowserRouter>
+        <Navbaar />
+        <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/wordle" element={<Wordle/>} />
         </Routes>
+      
+
+        <div>
+          {solution && <Wordle solution={solution}/>}
+        </div>
+
       </BrowserRouter>
-
-
-
-    <div className="App">
-      <h1 className="App-header">
-          Wordle Clone.
-      </h1>
-
-      {solution && <Wordle solution={solution}/>}
     </div>
-
-    </div>
+    
+    
   );
 }
 
