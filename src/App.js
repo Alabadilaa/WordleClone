@@ -7,6 +7,7 @@ import Navbaar from './Components/Navbaar/Navbaar'
 import './App.css';
 import { useEffect, useState } from 'react';
 
+
 function App() {
   const [solution, setSolution] = useState(null)
 
@@ -24,14 +25,13 @@ function App() {
       <BrowserRouter>
         <Navbaar />
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/wordle" element={<Wordle/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/wordle" element={solution && <Wordle solution={solution}/>} />
         </Routes>
       
-
-        <div>
+        {/* <div>
           {solution && <Wordle solution={solution}/>}
-        </div>
+        </div> */}
 
       </BrowserRouter>
     </div>
