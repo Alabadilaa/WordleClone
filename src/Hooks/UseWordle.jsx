@@ -70,7 +70,7 @@ const UseWordle = (solution) => {
         return
       }
       const formatted = formatGuess()
-      console.log(formatted)
+      addNewGuess(formatted)
     }
     if (key === 'Backspace') {
       setCurrentGuess((prev) => {
